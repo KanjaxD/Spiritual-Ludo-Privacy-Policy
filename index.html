@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Spiritual Ludo</title>
+  <meta name="description" content="Privacy Policy for Spiritual Ludo mobile application published by KanjaX. Details on local device storage, Google AdMob, user rights, and data practices." />
+  <meta name="author" content="KanjaX" />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #051915;
+      --bg-card: rgba(8, 38, 31, 0.85);
+      --bg-card-border: rgba(245, 202, 105, 0.28);
+      --text-main: #eff8f4;
+      --text-muted: #a6c6bc;
+      --text-dim: #71958b;
+      --gold-primary: #f5c768;
+      --gold-light: #fff3c5;
+      --gold-border: rgba(245, 199, 104, 0.55);
+      --emerald-glow: rgba(23, 110, 89, 0.35);
+      --link-color: #ffd87c;
+      --link-hover: #ffffff;
+      --tag-bg: rgba(245, 199, 104, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(circle at 15% 10%, rgba(26, 92, 75, 0.45), transparent 45%),
+        radial-gradient(circle at 85% 85%, rgba(204, 150, 36, 0.15), transparent 50%),
+        linear-gradient(160deg, #041411 0%, #082822 50%, #03120f 100%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.68;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header.policy-header {
+      text-align: center;
+      padding: 2.5rem 2rem 2rem;
+      border: 1.5px solid var(--bg-card-border);
+      border-radius: 1.25rem;
+      background: var(--bg-card);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), 0 0 35px var(--emerald-glow);
+      margin-bottom: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header.policy-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.85rem;
+      background: var(--tag-bg);
+      border: 1px solid var(--gold-border);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 1rem;
+    }
+
+    h1.policy-title {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: clamp(2rem, 4.5vw, 2.75rem);
+      font-weight: 800;
+      color: var(--gold-light);
+      letter-spacing: 0.03em;
+      margin-bottom: 0.6rem;
+      text-shadow: 0 2px 14px rgba(245, 199, 104, 0.25);
+    }
+
+    .policy-subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba(245, 202, 105, 0.15);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .meta-bar strong {
+      color: var(--gold-light);
+    }
+
+    /* Key Highlights Grid */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .highlight-card {
+      background: rgba(8, 36, 30, 0.65);
+      border: 1px solid rgba(245, 202, 105, 0.2);
+      border-radius: 0.9rem;
+      padding: 1.2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .highlight-card h3 {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .highlight-card p {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Table of Contents */
+    .toc-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: 1rem;
+      padding: 1.4rem 1.6rem;
+      margin-bottom: 2.2rem;
+      backdrop-filter: blur(10px);
+    }
+
+    .toc-card h2 {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 1.15rem;
+      color: var(--gold-light);
+      margin-bottom: 0.8rem;
+    }
+
+    .toc-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 0.4rem 1.2rem;
+      list-style: none;
+    }
+
+    .toc-list a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: color 0.18s ease;
+      display: inline-block;
+      padding: 0.2rem 0;
+    }
+
+    .toc-list a:hover {
+      color: var(--gold-light);
+      text-decoration: underline;
+    }
+
+    /* Main Policy Sections */
+    article.policy-body {
+      background: var(--bg-card);
+      border: 1.5px solid var(--bg-card-border);
+      border-radius: 1.25rem;
+      padding: 2.5rem 2.2rem;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    section.policy-section {
+      margin-bottom: 2.5rem;
+      scroll-margin-top: 2rem;
+    }
+
+    section.policy-section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h2.section-heading {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: 1.35rem;
+      color: var(--gold-light);
+      margin-bottom: 0.9rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid rgba(245, 202, 105, 0.2);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--text-main);
+      font-size: 0.96rem;
+      line-height: 1.7;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 0.8rem 0 1.2rem 1.4rem;
+      color: var(--text-muted);
+      font-size: 0.94rem;
+    }
+
+    li {
+      margin-bottom: 0.45rem;
+      line-height: 1.6;
+    }
+
+    strong {
+      color: #fff;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: underline;
+      transition: color 0.18s ease;
+      word-break: break-word;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+    }
+
+    /* Callout Note */
+    .callout-box {
+      background: rgba(14, 56, 46, 0.7);
+      border-left: 3px solid var(--gold-primary);
+      padding: 0.9rem 1.1rem;
+      border-radius: 0 0.6rem 0.6rem 0;
+      margin: 1.2rem 0;
+      font-size: 0.9rem;
+      color: #e3f3ec;
+    }
+
+    /* Footer */
+    footer.policy-footer {
+      text-align: center;
+      padding-top: 2.5rem;
+      color: var(--text-dim);
+      font-size: 0.82rem;
+    }
+
+    footer.policy-footer p {
+      color: var(--text-dim);
+      font-size: 0.82rem;
+      margin-bottom: 0.4rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      body {
+        padding: 1.2rem 0.85rem 3rem;
+        font-size: 15px;
+      }
+      header.policy-header {
+        padding: 1.8rem 1.2rem 1.5rem;
+      }
+      article.policy-body {
+        padding: 1.8rem 1.2rem;
+      }
+      h1.policy-title {
+        font-size: 1.85rem;
+      }
+      h2.section-heading {
+        font-size: 1.2rem;
+      }
+      .toc-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+        padding: 0;
+      }
+      header.policy-header,
+      article.policy-body,
+      .highlight-card,
+      .toc-card {
+        background: transparent !important;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+        color: #000 !important;
+      }
+      h1.policy-title,
+      h2.section-heading,
+      .highlight-card h3 {
+        color: #000 !important;
+        text-shadow: none !important;
+      }
+      a {
+        color: #000 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="policy-header">
+      <div class="app-badge">✦ Official Privacy Document ✦</div>
+      <h1 class="policy-title">SPIRITUAL LUDO</h1>
+      <p class="policy-subtitle">Privacy Policy &amp; Data Transparency Statement</p>
+      
+      <div class="meta-bar">
+        <div><strong>Effective Date:</strong> September 18, 2026</div>
+        <div><strong>Publisher:</strong> KanjaX</div>
+        <div><strong>Contact:</strong> <a href="mailto:kanjaxd1@gmail.com">kanjaxd1@gmail.com</a></div>
+      </div>
+    </header>
+
+    <!-- Key Highlights Summary -->
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <h3>🛡️ Zero Remote Accounts</h3>
+        <p>No email, password, or account registration is requested. The current game stays on your device while the app is open.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>🎲 Gameplay First</h3>
+        <p>The game has no in-app shop or collectible cards. Play progress and settings stay on your device.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>📢 Voluntary &amp; Capped Ads</h3>
+        <p>Google AdMob rewarded ads are 100% voluntary for "Divine Grace" rolls. Interstitial ads are frequency-capped and never interrupt active gameplay.</p>
+      </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="toc-card" aria-label="Table of Contents">
+      <h2>Table of Contents</h2>
+      <ul class="toc-list">
+        <li><a href="#section-1">1. About this policy</a></li>
+        <li><a href="#section-2">2. Game data stored on your device</a></li>
+        <li><a href="#section-3">3. Advertising data and Google AdMob</a></li>
+        <li><a href="#section-4">4. Privacy choices and consent</a></li>
+        <li><a href="#section-5">5. Retention and deletion</a></li>
+        <li><a href="#section-6">6. Device permissions and security</a></li>
+        <li><a href="#section-7">7. Children and age audience</a></li>
+        <li><a href="#section-8">8. Changes and contact information</a></li>
+      </ul>
+    </nav>
+
+    <!-- Policy Content -->
+    <article class="policy-body">
+
+      <!-- Section 1 -->
+      <section id="section-1" class="policy-section">
+        <h2 class="section-heading">1. About this policy</h2>
+        <p>
+          This policy explains information used by <strong>Spiritual Ludo</strong> (the "game" or "application") and its third-party advertising service provider, Google AdMob. 
+        </p>
+        <p>
+          The game features no account registration, developer-operated cloud save service, social network login, or developer-operated tracking analytics. The term "local storage" describes the few preferences saved on your device; it does not mean advertising services collect no technical network data.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section-2" class="policy-section">
+        <h2 class="section-heading">2. Game data stored on your device</h2>
+        <p>
+          Spiritual Ludo keeps the current game in device memory while the app is open. It does not restore board progress after the app closes. The current session includes:
+        </p>
+        <ul>
+          <li>Active board positions, token coordinates, and turn progression for Spiritual Ludo;</li>
+          <li>Current square positions and turns for the 100-Square Snake & Ladder journey;</li>
+          <li>Current-session sound and other game settings.</li>
+        </ul>
+        <p>
+          Local storage retains only the board-column layout preference and first-launch privacy-notice acknowledgment between sessions. Game data is <strong>not uploaded to a developer server</strong>. Ad frequency counters and transition animation states are also held only in temporary memory for the current session.
+        </p>
+        <p>An older version may have stored a shop profile locally; this version no longer uses it.</p>
+        <p>
+          The Android application is configured to exclude app data from automatic Android cloud backups and device-transfer backups. Operating systems and device manufacturers may manage system-level backups outside the application's direct control. Browser local storage is separate from Android app storage.
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section-3" class="policy-section">
+        <h2 class="section-heading">3. Advertising data and Google AdMob</h2>
+        <p>
+          The Android application integrates <strong>Google AdMob</strong> (Google Mobile Ads SDK) and Google's <strong>User Messaging Platform (UMP)</strong>:
+        </p>
+        <ul>
+          <li>
+            <strong>Rewarded Video Ads (Optional):</strong> Rewarded ads are entirely optional and only requested when you voluntarily tap the in-game <em>"Grace (6)"</em> or blessing button to summon a divine roll of 6 or obtain spiritual rerolls.
+          </li>
+          <li>
+            <strong>Interstitial Ads (Frequency-Capped):</strong> The application may display a non-rewarded full-screen interstitial ad at natural break points, such as completing a game (e.g. reaching the Vaikuntha sanctum in Ludo or attaining GOD at Square 100 in Snake & Ladder). Interstitials are session-delayed, frequency-capped, and are <strong>never intentionally displayed during active pawn movement, active dice rolling, on app launch, or after every single turn</strong>.
+          </li>
+          <li>
+            <strong>Offline Playability:</strong> The game remains fully playable if network connectivity is disabled or if advertising requests fail. A failed ad request never blocks or penalizes your gameplay action.
+          </li>
+        </ul>
+        <p>
+          Google and its advertising service providers may automatically collect or receive technical device data, including:
+        </p>
+        <ul>
+          <li>IP addresses (used to infer approximate general location, such as city or country);</li>
+          <li>Device and advertising identifiers (such as the Android Advertising ID / AAID and App-Set ID);</li>
+          <li>Interactions with the app and advertisements, including app launches, taps, impressions, and video views;</li>
+          <li>Diagnostic, performance, and crash metrics.</li>
+        </ul>
+        <p>
+          This data is processed by Google for ad delivery, impression measurement, fraud prevention, and security. Spiritual Ludo applies a conservative general-audience content rating limit and under-age-of-consent treatment; Google's consent choices determine which ad serving modes are permitted. The developer does not receive a copy of your game session through AdMob, but may view aggregated analytical reports provided by Google. No independent tracking SDKs, crash analytics, or third-party mediation networks have been added by the developer.
+        </p>
+        <p>
+          Google processes information under its own privacy policies:
+        </p>
+        <ul>
+          <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></li>
+          <li>How Google uses information from sites or apps: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/partner-sites</a></li>
+          <li>Google Ad Settings &amp; Personalization Controls: <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">https://myadcenter.google.com/</a></li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section-4" class="policy-section">
+        <h2 class="section-heading">4. Privacy choices and consent</h2>
+        <p>
+          The first-launch privacy notice is presented once upon initial installation. Continuing acknowledges this policy; it is not permission for personalized advertising. You can review this full policy from within the game at any time (Main Menu &gt; Privacy).
+        </p>
+        <p>
+          Where required by applicable regional laws (such as the European Economic Area / GDPR, UK, and relevant state regulations), Google's User Messaging Platform (UMP) provides explicit choice screens prior to ad requests. If consent checks fail or ad serving is disallowed, ad requests are prevented.
+        </p>
+        <p>
+          When Google requires a privacy-options entry point, the game shows <strong>Settings &gt; Google Ad Choices</strong> so you can update your advertising choices. Depending on your Android version, you may also reset or delete your Android Advertising ID through your device system settings (<strong>Settings &gt; Google &gt; Ads</strong>).
+        </p>
+        <p>
+          You can always choose not to watch a rewarded video ad. An interrupted or prematurely closed ad does not grant in-game Grace unless Google confirms completion. Interstitial ads do not grant virtual rewards and can be closed using the dismiss controls (X) supplied by the ad provider.
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section-5" class="policy-section">
+        <h2 class="section-heading">5. Retention and deletion</h2>
+        <p>
+          Current game progress ends when the app closes. <strong>Settings &gt; Reset Progress</strong> restarts the current board, but leaves the saved column preference and first-launch acknowledgment. Clearing app storage or uninstalling removes those local preferences and any shop-profile data left by an older version.
+        </p>
+        <p>
+          To permanently erase all local application data, navigate to:
+          <br />
+          <code>Android Settings &gt; Apps &gt; Spiritual Ludo &gt; Storage &gt; Clear Storage</code> (or uninstall the application). Browser users can clear site storage directly within their browser settings.
+        </p>
+        <p>
+          Because the developer does not maintain remote user accounts or databases, the developer cannot remotely retrieve, restore, or delete game progress. There is no remote account to delete. Clearing local app data does not delete information already processed by Google AdMob; Google's retention rules and deletion controls govern data held by Google.
+        </p>
+        <p>
+          Support messages or privacy inquiries voluntarily sent to the developer are used solely to resolve your request and fulfill legal obligations. Do not send sensitive personal information unnecessarily.
+        </p>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section-6" class="policy-section">
+        <h2 class="section-heading">6. Device permissions and security</h2>
+        <p>
+          Spiritual Ludo requests only essential network permissions:
+        </p>
+        <ul>
+          <li><code>android.permission.INTERNET</code>: Required to load advertisements, verify connectivity, and retrieve Google UMP consent dialogues.</li>
+          <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Required by the Google Mobile Ads SDK to monitor network availability.</li>
+        </ul>
+        <p>
+          The merged Android manifest includes advertising-ID permissions and standard foreground/wake-lock support required by Google Android libraries.
+        </p>
+        <div class="callout-box">
+          <strong>Explicit Permissions Not Requested:</strong> Spiritual Ludo does <strong>NOT</strong> request access to your camera, microphone, device contacts, call history, SMS messages, external photos/media files, precise GPS location, or biometric sensors. Game illustrations, dice animations, board textures, and sound effects are bundled locally within the application package.
+        </div>
+        <p>
+          The application disables cleartext HTTP traffic in its Android security configuration (enforcing encrypted HTTPS). Third-party advertising partners utilize their own industry-standard administrative and technical security measures.
+        </p>
+      </section>
+
+      <!-- Section 7 -->
+      <section id="section-7" class="policy-section">
+        <h2 class="section-heading">7. Children and age audience</h2>
+        <p>
+          Spiritual Ludo is intended for a general audience aged <strong>13 and older</strong> and is not directed to children under 13. Advertising requests apply conservative under-age-of-consent and general-audience content parameters.
+        </p>
+        <p>
+          If you are a parent or guardian and believe a child under 13 has improperly provided personal information through this application, please contact the publisher at <a href="mailto:kanjaxd1@gmail.com">kanjaxd1@gmail.com</a>, and consult Google's privacy controls for information processed by Google services.
+        </p>
+      </section>
+
+      <!-- Section 8 -->
+      <section id="section-8" class="policy-section">
+        <h2 class="section-heading">8. Changes and contact information</h2>
+        <p>
+          The publisher may update this Privacy Policy from time to time to reflect changes in game features, legal obligations, or advertising practices. The current version will always remain accessible within the application and at the published URL. Material changes requiring renewed disclosure or consent will be handled through appropriate in-app notifications.
+        </p>
+        <p>
+          For privacy questions, data protection inquiries, or applicable rights requests, please contact:
+        </p>
+        <div class="callout-box">
+          <strong>Publisher:</strong> KanjaX<br />
+          <strong>Privacy Contact:</strong> <a href="mailto:kanjaxd1@gmail.com">kanjaxd1@gmail.com</a><br />
+          <strong>Published Policy URL:</strong> <a href="https://kanjaxd.github.io/Spiritual-Ludo-Privacy-Policy/" target="_blank" rel="noopener noreferrer">https://kanjaxd.github.io/Spiritual-Ludo-Privacy-Policy/</a>
+        </div>
+        <p>
+          Please describe your request clearly without including sensitive passwords, payment details, or unnecessary personal data.
+        </p>
+      </section>
+
+    </article>
+
+    <!-- Footer -->
+    <footer class="policy-footer">
+      <p>&copy; 2026 KanjaX. All rights reserved.</p>
+      <p>Spiritual Ludo &bull; Built with respect for player privacy and transparent data practices.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
